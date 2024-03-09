@@ -29,7 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Add your screenshot here](screenshot.png)
+![image](https://github.com/FrancisoRocha/faq-accordion-main/assets/122055396/19acd3cc-191f-4feb-a121-5367572870e9)
+![image](https://github.com/FrancisoRocha/faq-accordion-main/assets/122055396/2af14029-e312-41a7-8dd2-09e3597cac36)
+![iPhone 14-1710000747005](https://github.com/FrancisoRocha/faq-accordion-main/assets/122055396/581e8019-8c81-47ed-b587-780ea95b79cc)
+
+
+
 
 ### Links
 
