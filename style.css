@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "WorkSans-italic";
+    src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "WorkSans-variable";
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "WorkSans-bold";
+    src: url(assets/fonts/static/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-family: "WorkSans-regular";
+    src: url(assets/fonts/static/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: "WorkSans-simibold";
+    src: url(assets/fonts/static/WorkSans-SemiBold.ttf);
+}
+/*ESTILOS GENERALES*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.image{
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    width: 110%;
+    height: 250px;
+    position: relative;
+}
+.acordeon{
+    position: relative;
+    top: -100px;
+    left: 27%;
+    width: 50%;
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    border-radius: 20px;
+}
+.acordeon .star{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    width: 40px;
+}
+.acordeon h1{
+    position: relative;
+    bottom: 20px;
+    left: 80px;
+    font-size: 60px;
+    font-family: "WorkSans-bold";
+}
+.acordeon .container .icon::before{
+    content: url(icon-plus.svg);
+    position: relative;
+    left: 650px;
+    top: 2em;
+    transform: translateY(-50%);
+}
+.acordeon .container .icon:hover{
+    content: url(icon-minus.svg);
+    position: relative;
+    left: 650px;
+    top: 2em;
+    transition: 100s;
+}
+.acordeon .container .ask{
+    font-family: "WorkSans-bold";
+    color: hsl(292, 91%, 22%);
+    font-size: 17px;
+    margin-left: 45px;
+}
+.acordeon .container .text{
+    margin-left: 50px;
+    margin-top: 45px;
+    padding-right: 100px;
+    font-size: 18px;
+    font-family: "WorkSans-bold";
+    color: hsl(301, 33%, 64%);
+}
+.acordeon .container .text{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+    overflow-y: auto;
+} 
+.acordeon .container.active .text{
+    height: 150px;
+}
+
+@media screen and (320px <= width <= 480px){
+    .image{
+        width: 125%;
+        height: 250px;
+        position: relative;
+    }
+    .acordeon{
+        position: relative;
+        top: -100px;
+        left: 20px;
+        width: 100%;
+    }
+    .acordeon .container .icon::before{
+        content: url(icon-plus.svg);
+        position: relative;
+        left: 290px;
+        top: 2em;
+        transform: translateY(-50%);
+    }
+    .acordeon .container .icon:hover{
+        content: url(icon-minus.svg);
+        position: relative;
+        left: 290px;
+        top: 2em;
+        transition: 100s;
+    }
+    .acordeon .container .ask{
+        font-family: "WorkSans-bold";
+        color: hsl(292, 91%, 22%);
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 90px;
+    }
+    .acordeon .container .text{
+        margin-left: 50px;
+        margin-top: 45px;
+        margin-right: 1px;
+        font-size: 20px;
+        font-family: "WorkSans-bold";
+        color: hsl(301, 33%, 64%);
+    }
+    .acordeon .container .text{
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: all 500ms;
+        overflow-y: auto;
+    } 
+    .acordeon .container.active .text{
+        height: 250px;
+    }
+
+}
+@media screen and (481px <= width <= 768px){
+    .acordeon{
+        position: relative;
+        top: -100px;
+        left: 10%;
+        width: 80%
+    }
+    .acordeon .star{
+        position: relative;
+        top: 50px;
+        left: 25px;
+        width: 10%;
+    }
+    .acordeon h1{
+        bottom: 15px;
+        left: 80px;
+        font-size: 60px;
+    }
+    .acordeon .container .icon::before{
+        content: url(icon-plus.svg);
+        position: relative;
+        left: 380px;
+        top: 2em;
+        transform: translateY(-50%);
+    }
+    .acordeon .container .icon:hover{
+        content: url(icon-minus.svg);
+        position: relative;
+        left: 300px;
+        top: 2em;
+    }
+    .acordeon .container .ask{
+        padding-right: 80px;
+        font-size: 22px;
+        padding-right: 30%;
+        margin-left: 25px;
+    }
+    .acordeon .container .text{
+        margin-left: 40px;
+        margin-top: 45px;
+        padding-right: 70px;
+        font-size: 20px;
+    }
+}
+@media screen and (768px <= width <= 1024px){
+    .acordeon .star{
+        top: 50px;
+        left: 25px;
+        width: 8%;
+    }
+    .acordeon h1{
+        bottom: 15px;
+        left: 80px;
+        font-size: 60px;
+    }
+    .acordeon .container .icon::before{
+        content: url(icon-plus.svg);
+        position: relative;
+        left: 500px;
+        top: 2em;
+        transform: translateY(-50%);
+    }
+    .acordeon .container .icon:hover{
+        content: url(icon-minus.svg);
+        position: relative;
+        left: 500px;
+        top: 2em;
+    }
+    .acordeon .container .ask{
+        padding-right: 130px;
+        font-size: 25px;
+        margin-left: 50px;
+    }
+    .acordeon .container .text{
+        margin-left: 40px;
+        margin-top: 45px;
+        text-align: justify;
+        padding-right: 50px;
+        font-size: 20px;
+    }
+}
